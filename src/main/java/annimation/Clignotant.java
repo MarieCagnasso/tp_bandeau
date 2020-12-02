@@ -10,6 +10,7 @@ public class Clignotant extends Effet{
         super(rep,b,msg,font);
     }
 
+    @Override
     public void doIt(){
         Color couleur = bandeau.getForeground();
         Color couleurBg  = bandeau.getBackground();

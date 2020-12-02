@@ -10,6 +10,7 @@ public class Rotation extends Effet{
         super(rep,b,msg,font);
     }
 
+    @Override
     public void doIt(){
         bandeau.setMessage(message);
         bandeau.setFont(font);

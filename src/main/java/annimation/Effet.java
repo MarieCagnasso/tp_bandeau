@@ -18,9 +18,5 @@ public abstract class Effet {
         this.font = f;
     }
 
-    public void modifySizeFont(int i){
-        this.font = new Font(font.getName(),font.getStyle(),font.getSize()+i);
-    }
-
     public abstract void doIt();
 }

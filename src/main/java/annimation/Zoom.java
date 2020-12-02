@@ -10,14 +10,13 @@ public class Zoom extends Effet{
         super(rep,b,msg,font);
     }
 
+    @Override
     public void doIt(){
         bandeau.setMessage(message);
-        bandeau.setFont(font);
-        Font fontinit = font;
         for (int c = 0; c<repetition; c++){
+            bandeau.setFont(font);
             for (int i = 5; i < 60 ; i+=5) {
-                modifySizeFont(i);
-                bandeau.setFont(font);
+                bandeau.setFont(new Font(font.getName(),font.getStyle(),font.getSize()+i));
                 bandeau.sleep(100);
             }
 
